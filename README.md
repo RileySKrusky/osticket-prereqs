@@ -42,7 +42,7 @@ Start by searching and selecting the virtual machine service in the search bar (
 
 
 <br />
-<h3>2)Setting up Resource Group</h3>
+<h3>2) Setting up Resource Group</h3>
 <p>
  After clicking on the "virtual machine name", you can name it anything you like; for this tutorial, we’ll use "osticket-vm." Select "create new resource group" to place the virtual machine into it, and name the resource group "os-ticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
 
@@ -53,7 +53,7 @@ You don’t need to any default settings on the following pages, but make sure t
 <p>
 <img src="https://i.imgur.com/G2mmFrE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<h3>3)Connecting to Remote Desktop</h3>
+<h3>3) Connecting to Remote Desktop</h3>
   <p> After all these steps are excecuted, you can then move on to connecting to your virtual machine using "Remote Desktop Connecion". Make sure to grab your "Public IP Adress". (You will find this by clicking on your virtual machine you just created. It should be near the top right of the screen). Make sure your virtual machines Public IP Adress is pasted properly in the Remote Desktop Connection.</p>
 </p>
 <p>
@@ -62,13 +62,13 @@ You don’t need to any default settings on the following pages, but make sure t
 <p>
 <img src="https://i.imgur.com/kgPFpyr.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
-<h3>4)Downloading OsTicket</h3>
+<h3>4) Downloading OsTicket</h3>
 <p>
  After you have logged into your "Remote Desktop", you can then procceed to download the "OsTicket" File provided here https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD. simply copy this link and paste it into a browser on your Virtual machine. Download and unzip this folder to your desktop.
   <p>
 <img src="https://i.imgur.com/O6NDJSp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<h3>5)Installing IIS</h3>
+<h3>5) Installing IIS</h3>
 <p>
 In your virtual machine, go to the bottom right in your windows search bar and type in "Control Panel". With this window open, go to "Uninstall Programs" Under "Programs".  
   <img src="https://i.imgur.com/6h7KEce.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -82,7 +82,7 @@ In this window, click "Internet Information Services" -> "World Wide Web Service
 </p>
 <img src="https://i.imgur.com/BiHgIUb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<h3>6)Installing Applications</h3>
+<h3>6) Installing Applications</h3>
 <p>
 After you have installed "IIS", you then open your "osticket" folder and procceed to install php manager. All the settings through this installation are fine to leave as is, so continue through the php manager installation portal.
   <img src="https://i.imgur.com/fddo2dU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -95,7 +95,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 <p>Procceed to instal these two files as well in the "osticket" folder:"mysql-5.5.62-win32" and "VC_redist.x86". For the "mysql-5.5.62-win32" folder, you will get to a screen that says "Choose Setup Type" select "Typical" and procceed with the rest of the installtion.</p>
 <img src="https://i.imgur.com/c7Me047.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/jaBVJRT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<h3>7)Launching MySQL</h3>
+<h3>7) Launching MySQL</h3>
 <p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will laucnh after installation. make sure this is checked. Go through the installation proccess until you get to this screen. choose "Standard Configuration" and procceed.
   
 <img src="https://i.imgur.com/OPsmJeU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
@@ -105,16 +105,60 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
  <img src="https://i.imgur.com/JLWIg3w.png" height="60%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 <p>After you have created a password, click "Next", "Execute" and "Finish"</p>
-<h3>8)Open IIS as an Admin</h3>
-<p>Go to your search bar on the bottom right of your windows desktop and search for "Internet Information Services (IIS) Manager". Right-click and select "run as administrator"</p>
+<h3>8) Open IIS as an Admin and Registering New PHP</h3>
+
+<p>Go to your search bar on the bottom left of your windows desktop and search for "Internet Information Services (IIS) Manager". Right-click and select "run as administrator"</p>
 
 <img src="https://i.imgur.com/8B9O9hP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>Once you have ran IIS as administrator, you will be welcomed to their home screen. within that home screen, you will see a "PHP Manager" file, click it. You will then be brought to the PHP manager screen. Click "Regester New PHP Version" -> "Browse" (Which is This "..." on the right of the search file bar) -> "Windows (C:)" -> "PHP". Once you have clicked "PHP", select the "php.cgi" file within the "PHP" folder. After thats done simply press "OK".</p>
+
+<img src="https://i.imgur.com/8JPpFxz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p>After all these steps have been completed, we can the procceed to go back to the "Internet Information Services (IIS) Manager" tab and on the top left, if you right click it, you can select stop and procceeed to wait for around a minute before clicking start.</p>
+
+<img src="https://i.imgur.com/ayQDTM0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<h3>9) OsTicket Installation</h3>
+
+<p>Once you have completed step 8, you can then open up your "OsTicket Installation File" again and procceed to unzip the compressed osticket folder within the "OsTicket Installation File" folder. Click the "OsTicket" file you just unzipped and and you will see an "upload" file in there. Now, make sure to open another file explorer by right clicking your folder icon on the bottom of your windows taskbar and clicking "File Explorer". Paste "c:\inetpub\wwwroot" into your quick access bar on the top of your file explorer tab. You will know you have done this right when you see two "iisstart" files in the folder. Click while holding "CTRL" and drag the "upload" file into your "Osticket" folder with the two "iisstart" files. Next, Rename your "upload" file to "osTicket". </p>
+
+<img src="https://i.imgur.com/b6r1o6A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p>Once you have completed this you can open up your "Internet Information Services (IIS) Manager" tab and stop the server, wait a minute, then start it again.</p>
+
+<img src="https://i.imgur.com/ayQDTM0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<h3>10) Installing Extensions</h3>
+
+<p>Once we have completed step 9 we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator, We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, clcik that and it will lead you to "application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and click "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "enable".  </p>
+
+<img src="https://i.imgur.com/JOel3zb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OqQ8tzH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>You will know you have done the steps correctly when you click on this browser "http://localhost/osTicket/setup/" and everything has a checkmark beside it except "APCu Extension" and  
+"Zend OPcache Extension".
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/U0AiEq0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<h3> 11) Renaming Ost file</h3>
+<p>
+After finishing step 10 correctly, you can then procceed to open another file explorer and pasting this path into the quick access bar- "C:\inetpub\wwwroot\osTicket\include". You will find a file in here called "ost-sampleconfig.php". Rename this file to "ost-config.php" . After renaming the file, right click that file and select "Properties" Then "Security" -> "Advanced" and "Disable Inheritance" and "Remove all inherited permissions".
+</p>
+<p>Next add a new permission by clicking "add" under permission entries</p>
+<img src="https://i.imgur.com/NhpANgv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>go to "select principle"</p>
+<img src="https://i.imgur.com/aDFMw4J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>go to "then above the advanced button, give permission to the admins of your company and press ok but, in this tutorial thought, I will be giving permission to "eveyone"</p>
+<img src="https://i.imgur.com/oSBN2wB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>Make sure to select what permissions your employess/admins should have. In this tutorial, I will be selecting full control.</p>
+<img src="https://i.imgur.com/H4xlPjU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p>Once all this is done, you can make sure to press "apply" and then "ok" on the bottom right of the "permissions entrie" tab and then "ok" for the last tab.</p>
+
+<img src="https://i.imgur.com/QUcZ2PJ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+
 <br />
