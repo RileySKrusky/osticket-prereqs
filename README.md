@@ -186,8 +186,15 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 
 <img src="https://i.imgur.com/RDwefUe.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>Once this is done, you can then go back to the "Database Settings" Column on the "Os-Ticket Installer" browser and Type in your "MySQL Database" (osTicket), Username and password (password from step 7)</p>
+<p>Once this is done, you can then go back to the "Database Settings" Column on the "Os-Ticket Installer" browser and Type in your "MySQL Database" (osTicket), Username and password (password from step 7). Once you have typed everything in correctly you can click "Install" and you have finally installed everything you need for os-ticket to work on your remote desktop!</p>
 
-<img src="https://i.imgur.com/RDwefUe.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/M7SEqAZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<h4>Congratulations!</h4>
+
+<h3>Admin User Link/End-User Link</h3>
+
+<p> This link will direct you to the "Admin User" login where you can login using your admin password created earlier. "http://localhost/osTicket/scp/login.php". This next link will be for End-Users: "http://localhost/osTicket/"</p>
 
 <br />
