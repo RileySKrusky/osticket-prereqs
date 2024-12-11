@@ -160,5 +160,34 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 
 <img src="https://i.imgur.com/QUcZ2PJ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+<h3> 12) Creating OsTicket Login Info</h3>
+<p> After you have succesfully given admin permissions. you can then jump back onto the OsTicket Installer browser here "http://localhost/osTicket/setup/" to create your help desk account. (Note - When you are creating the "Admin User" Account make sure the email is different from the "Help Desk User" account).</p>
+
+<h3> 13) Setting up HeidiSQL</h3>
+
+<p>When you have completed the "Help Desk" and "Admin User" accounts. You will see a third column called "Database Settings". for this section we will have to go back to the "Os-Ticket Installation" folder to install the "HeidiSQL" file. </p>
+
+<img src="https://i.imgur.com/vZwaUxl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>Procceed through the installation proccess until you get to the end where you need to make sure that the "Launch HeidiSQL" option has been checked.</p>
+
+<img src="https://i.imgur.com/Wg2UZWR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>Once you press "Finish" the HeidiSQL App will laucnh and you will be prompt with an updates page. You can press skip to get to the next part.</p>
+<p>On the "Heidi Session Manager" page on the bottom left you will see a "New" button. Click this button and type in the password we saved in step 7 (told you we would be coming back to it). Once you have punched in the password, you can click the "Open" button on the bottom of this page. </p>
+
+<img src="https://i.imgur.com/zIlqQ7K.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>This will then bring you to a page called "unamed". On this page you will need to  right click the "unamed" button on the top left -> "Create New" -> Then "Database" </p>
+
+<img src="https://i.imgur.com/X0a7wRq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>In order for this file to properly register in the database, you will need to make sure that the "Name" is "osTicket". When you have properly typed "osTicket" into the name text box, you can then click "Ok"</p>
+
+<img src="https://i.imgur.com/RDwefUe.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>Once this is done, you can then go back to the "Database Settings" Column on the "Os-Ticket Installer" browser and Type in your "MySQL Database" (osTicket), Username and password (password from step 7)</p>
+
+<img src="https://i.imgur.com/RDwefUe.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <br />
