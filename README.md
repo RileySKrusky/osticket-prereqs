@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 <h3>1) Creating a Virtual Machine</h3>
 <p>
-Start by searching and selecting the virtual machine service in the search bar (Make sure you select "Virtual Machine", not "Virtual Networks"). 
+Start by searching and selecting the "Virtual Machines" in the search bar of Microsoft Azure (Make sure you select "Virtual Machines", not "Virtual Networks"). 
 </p>
 
 <p>
@@ -44,18 +44,20 @@ Start by searching and selecting the virtual machine service in the search bar (
 <br />
 <h3>2) Setting up Resource Group</h3>
 <p>
- After clicking on the "virtual machine name", you can name it anything you like; for this tutorial, we’ll use "osticket-vm." Select "create new resource group" to place the virtual machine into it, and name the resource group "os-ticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
+ After clicking on the "virtual machine name", you can name it anything you like. For this tutorial, we’ll name ours "osticket-vm". Select "create new resource group" and click on the virtual machine you just created, and name the resource group "os-ticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
 
 Scroll down to find the "image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the size option on the same page.
 
-You don’t need to any default settings on the following pages, but make sure the licensing box is checked on the first page. Once done, proceed to review and create the virtual machine. The system will automatically create a virtual network, so you don’t need to configure that..
+You don’t need to change any default settings on the following pages, but make sure the licensing box is checked on the first page. Once done, proceed to review and create the virtual machine. The system will automatically create a virtual network, so you don’t need to configure that..
 
 <p>
 <img src="https://i.imgur.com/G2mmFrE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <h3>3) Connecting to Remote Desktop</h3>
+
   <p> After all these steps are excecuted, you can then move on to connecting to your virtual machine using "Remote Desktop Connecion". Make sure to grab your "Public IP Adress". (You will find this by clicking on your virtual machine you just created. It should be near the top right of the screen). Make sure your virtual machines Public IP Adress is pasted properly in the Remote Desktop Connection.</p>
 </p>
+
 <p>
 <img src="https://i.imgur.com/XhlWo4x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
