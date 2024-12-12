@@ -44,7 +44,7 @@ Start by searching and selecting the "Virtual Machines" in the search bar of Mic
 <br />
 <h3>2) Setting up Resource Group</h3>
 <p>
- After clicking on the "virtual machine name", you can name it anything you like. For this tutorial, we’ll name ours "osticket-vm". Select "create new resource group" and click on the virtual machine you just created, and name the resource group "os-ticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
+ After clicking on the "virtual machine name", you can name it anything you like. For this tutorial, we’ll name ours "osticket-vm". Select "create new resource group" and click on the virtual machine you just created, and name the resource group "osticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
 
 Scroll down to find the "image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the size option on the same page.
 
@@ -72,7 +72,7 @@ You don’t need to change any default settings on the following pages, but make
 </p>
 <h3>5) Installing IIS</h3>
 <p>
-In your virtual machine, go to the bottom right in your windows search bar and type in "Control Panel". With this window open, go to "Uninstall Programs" Under "Programs".  
+In your virtual machine, go to the bottom left in your windows search bar and type in "Control Panel". With this window open, go to "Uninstall Programs" Under "Programs".  
   <img src="https://i.imgur.com/6h7KEce.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
@@ -94,11 +94,11 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 </p>
 <p>After "IIS", "PHP manager" and "rewrite_amd64" are installed, go into your file explorer in your windows shortcut bar on the bottom and in your "Windows (C:)" drive under "This PC" create a "PHP" folder. Once Created, go into your "osticket" folder and extract the "php-7.3.8-nts-Win32-VC15-x86" folder to your "PHP" folder you just created in your "C" drive
 <img src="https://i.imgur.com/jpz5HFD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
-<p>Procceed to instal these two files as well in the "osticket" folder:"mysql-5.5.62-win32" and "VC_redist.x86". For the "mysql-5.5.62-win32" folder, you will get to a screen that says "Choose Setup Type" select "Typical" and procceed with the rest of the installtion.</p>
+<p>Procceed to install these two files as well in the "osticket" folder: "mysql-5.5.62-win32" and "VC_redist.x86". For the "mysql-5.5.62-win32" folder, you will get to a screen that says "Choose Setup Type" select "Typical" and procceed with the rest of the installtion.</p>
 <img src="https://i.imgur.com/c7Me047.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/jaBVJRT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <h3>7) Launching MySQL</h3>
-<p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will laucnh after installation. make sure this is checked. Go through the installation proccess until you get to this screen. choose "Standard Configuration" and procceed.
+<p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will launch after installation. make sure this is checked. Go through the installation proccess until you get to this screen. choose "Standard Configuration" and procceed.
   
 <img src="https://i.imgur.com/OPsmJeU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
 
@@ -117,13 +117,13 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <img src="https://i.imgur.com/8JPpFxz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>After all these steps have been completed, we can the procceed to go back to the "Internet Information Services (IIS) Manager" tab and on the top left, if you right click it, you can select stop and procceeed to wait for around a minute before clicking start.</p>
+<p>After all these steps have been completed, we can then procceed to go back to the "Internet Information Services (IIS) Manager" tab and on the top left, if you right click it, you can select stop and procceed to wait for around a minute before clicking start.</p>
 
 <img src="https://i.imgur.com/ayQDTM0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <h3>9) OsTicket Installation</h3>
 
-<p>Once you have completed step 8, you can then open up your "OsTicket Installation File" again and procceed to unzip the compressed osticket folder within the "OsTicket Installation File" folder. Click the "OsTicket" file you just unzipped and and you will see an "upload" file in there. Now, make sure to open another file explorer by right clicking your folder icon on the bottom of your windows taskbar and clicking "File Explorer". Paste "c:\inetpub\wwwroot" into your quick access bar on the top of your file explorer tab. You will know you have done this right when you see two "iisstart" files in the folder. Click while holding "CTRL" and drag the "upload" file into your "Osticket" folder with the two "iisstart" files. Next, Rename your "upload" file to "osTicket". </p>
+<p>Once you have completed step 8, you can then open up your "OsTicket Installation File" again and procceed to unzip the compressed osticket folder within the "OsTicket Installation File" folder. Click the "OsTicket" file you just unzipped and you will see an "upload" file in there. Now, make sure to open another file explorer by right clicking your folder icon on the bottom of your windows taskbar and clicking "File Explorer". Paste "c:\inetpub\wwwroot" into your quick access bar on the top of your file explorer tab. You will know you have done this right when you see two "iisstart" files in the folder. Click while holding "CTRL" and drag the "upload" file into your "Osticket" folder with the two "iisstart" files. Next, Rename your "upload" file to "osTicket". </p>
 
 <img src="https://i.imgur.com/b6r1o6A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -133,7 +133,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <h3>10) Installing Extensions</h3>
 
-<p>Once we have completed step 9 we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator, We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, clcik that and it will lead you to "application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and click "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "enable".  </p>
+<p>Once we have completed osTicket Installation we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator, We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, click that and it will lead you to "Application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and click "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "enable".  </p>
 
 <img src="https://i.imgur.com/JOel3zb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/OqQ8tzH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -147,23 +147,31 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 </p>
 <h3> 11) Renaming Ost file</h3>
 <p>
-After finishing step 10 correctly, you can then procceed to open another file explorer and pasting this path into the quick access bar- "C:\inetpub\wwwroot\osTicket\include". You will find a file in here called "ost-sampleconfig.php". Rename this file to "ost-config.php" . After renaming the file, right click that file and select "Properties" Then "Security" -> "Advanced" and "Disable Inheritance" and "Remove all inherited permissions".
+After finishing step 10 correctly, you can then procceed to open another file explorer and pasting this path into the quick access bar- "C:\inetpub\wwwroot\osTicket\include". You will find a file in here called "ost-sampleconfig.php". Rename this file to "ost-config.php" . After renaming the file, right click that file and select "Properties" Then "Security" -> "Advanced", "Disable Inheritance" and "Remove all inherited permissions".
 </p>
 <p>Next add a new permission by clicking "add" under permission entries</p>
+
 <img src="https://i.imgur.com/NhpANgv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 <p>go to "select principle"</p>
+
 <img src="https://i.imgur.com/aDFMw4J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>go to "then above the advanced button, give permission to the admins of your company and press ok but, in this tutorial thought, I will be giving permission to "eveyone"</p>
+
+<p>then above the advanced button, give permission to the admins of your company and press ok but, in this tutorial, I will be giving permission to "everyone"</p>
+
 <img src="https://i.imgur.com/oSBN2wB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>Make sure to select what permissions your employess/admins should have. In this tutorial, I will be selecting full control.</p>
+
+<p>Make sure to select what permissions your employees/admins should have. In this tutorial, I will be selecting "Full Control".</p>
+
 <img src="https://i.imgur.com/H4xlPjU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>Once all this is done, you can make sure to press "apply" and then "ok" on the bottom right of the "permissions entrie" tab and then "ok" for the last tab.</p>
+<p>Once all this is done, you can make sure to press "apply" and then "ok" on the bottom right of the "permissions entries" tab and then "ok" for the last tab.</p>
 
 <img src="https://i.imgur.com/QUcZ2PJ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h3> 12) Creating OsTicket Login Info</h3>
-<p> After you have succesfully given admin permissions. you can then jump back onto the OsTicket Installer browser here "http://localhost/osTicket/setup/" to create your help desk account. (Note - When you are creating the "Admin User" Account make sure the email is different from the "Help Desk User" account).</p>
+
+<p> After you have succesfully given admin permissions. you can then jump back onto the OsTicket Installer browser here "http://localhost/osTicket/setup/" to create your help desk account. (Note - When you are creating the "Admin User" Account make sure the email is different from the "Help Desk User" email).</p>
 
 <h3> 13) Setting up HeidiSQL</h3>
 
@@ -176,11 +184,12 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 <img src="https://i.imgur.com/Wg2UZWR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Once you press "Finish" the HeidiSQL App will laucnh and you will be prompt with an updates page. You can press skip to get to the next part.</p>
+
 <p>On the "Heidi Session Manager" page on the bottom left you will see a "New" button. Click this button and type in the password we saved in step 7 (told you we would be coming back to it). Once you have punched in the password, you can click the "Open" button on the bottom of this page. </p>
 
 <img src="https://i.imgur.com/zIlqQ7K.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>This will then bring you to a page called "unamed". On this page you will need to  right click the "unamed" button on the top left -> "Create New" -> Then "Database" </p>
+<p>This will then bring you to a page called "unamed". On this page you will need to right click the "unamed" button on the top left -> "Create New" -> Then "Database" </p>
 
 <img src="https://i.imgur.com/X0a7wRq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
@@ -190,13 +199,12 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 
 <p>Once this is done, you can then go back to the "Database Settings" Column on the "Os-Ticket Installer" browser and Type in your "MySQL Database" (osTicket), Username and password (password from step 7). Once you have typed everything in correctly you can click "Install" and you have finally installed everything you need for os-ticket to work on your remote desktop!</p>
 
-
 <img src="https://i.imgur.com/M7SEqAZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h4>Congratulations!</h4>
 
 <h3>Admin User Link/End-User Link</h3>
 
-<p> This link will direct you to the "Admin User" login where you can login using your admin password created earlier. "http://localhost/osTicket/scp/login.php". This next link will be for End-Users: "http://localhost/osTicket/"</p>
+<p> This link will direct you to the "Admin User" login where you can login using your admin password created earlier: "http://localhost/osTicket/scp/login.php". This next link will be for End-Users: "http://localhost/osTicket/"</p>
 
 <br />
