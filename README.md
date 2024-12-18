@@ -156,7 +156,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <h3>10) Installing Extensions</h3>
 
-<p>Once we have completed osTicket Installation we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator, We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, click that and it will lead you to "Application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and select "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "Enable".  </p>
+<p>Once we have completed osTicket Installation we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator. We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, click that and it will lead you to "Application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and select "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "Enable".  </p>
 
 <img src="https://i.imgur.com/JOel3zb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/OqQ8tzH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
