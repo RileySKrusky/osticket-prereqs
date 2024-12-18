@@ -100,9 +100,10 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
   <img src="https://i.imgur.com/fddo2dU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<p>The same goes for the "rewrite_amd64" file in the osticket folder. simply procceed through that installation portal as well.
+<p>The same goes for the "rewrite_amd64" file in the osticket folder. simply procceed through that installation portal as well.</p>
+
   <img src="https://i.imgur.com/ymvr1n0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 
 <p>After "IIS", "PHP manager" and "rewrite_amd64" are installed, go into your file explorer in your windows shortcut bar on the bottom and in your "Windows (C:)" drive under "This PC" create a "PHP" folder. Once Created, go into your "osticket" folder and extract the "php-7.3.8-nts-Win32-VC15-x86" folder to your "PHP" folder you just created in your "C" drive</p>
 
