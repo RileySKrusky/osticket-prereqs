@@ -110,7 +110,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <img src="https://i.imgur.com/jpz5HFD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>Procceed to install these two files as well in the "osticket" folder: "mysql-5.5.62-win32" and "VC_redist.x86". For the "mysql-5.5.62-win32" folder, you will get to a screen that says "Choose Setup Type" select "Typical" and procceed with the rest of the installtion.</p>
+<p>Procceed to install these two files as well in the "osticket" folder: "mysql-5.5.62-win32" and "VC_redist.x86". For the "mysql-5.5.62-win32" folder, you will get to a screen that says "Choose Setup Type" select "Typical" and procceed with the rest of the installation.</p>
 
 <img src="https://i.imgur.com/c7Me047.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
