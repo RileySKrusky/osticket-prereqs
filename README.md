@@ -118,7 +118,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <h3>7) Launching MySQL</h3>
 
-<p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will launch after installation. make sure this is checked. Go through the installation proccess until you get to this screen. choose "Standard Configuration" and procceed.
+<p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will launch after installation. make sure this is checked. Go through the installation proccess until you get to this screen. Choose "Standard Configuration" and procceed.
   
 <img src="https://i.imgur.com/OPsmJeU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
 
@@ -136,7 +136,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <img src="https://i.imgur.com/8B9O9hP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>Once you have ran IIS as administrator, you will be welcomed to their home screen. within that home screen, you will see a "PHP Manager" file, click it. You will then be brought to the PHP manager screen. Click "Register New PHP Version" -> "Browse" (Which is This "..." on the right of the search file bar) -> "Windows (C:)" -> "PHP". Once you have clicked "PHP", select the "php.cgi" file within the "PHP" folder. After thats done simply press "OK".</p>
+<p>Once you have ran IIS as administrator, you will be welcomed to their home screen. Within that home screen, you will see a "PHP Manager" file, click it. You will then be brought to the PHP manager screen. Click "Register New PHP Version" -> "Browse" (Which is This "..." on the right of the search file bar) -> "Windows (C:)" -> "PHP". Once you have clicked "PHP", select the "php.cgi" file within the "PHP" folder. After thats done simply press "OK".</p>
 
 <img src="https://i.imgur.com/8JPpFxz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -146,7 +146,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <h3>9) OsTicket Installation</h3>
 
-<p>Once you have completed step 8, you can then open up your "OsTicket Installation File" again and procceed to unzip the compressed osticket folder within the "OsTicket Installation File" folder. Click the "OsTicket" file you just unzipped and you will see an "upload" file in there. Now, make sure to open another file explorer by right clicking your folder icon on the bottom of your windows taskbar and clicking "File Explorer". Paste "c:\inetpub\wwwroot" into your quick access bar on the top of your file explorer tab. You will know you have done this right when you see two "iisstart" files in the folder. Click while holding "CTRL" and drag the "upload" file into your "Osticket" folder with the two "iisstart" files. Next, Rename your "upload" file to "osTicket". </p>
+<p>Once you have completed step 8, you can then open up your "OsTicket Installation File" again and procceed to unzip the compressed osticket folder within the "OsTicket Installation File" folder. Click the "OsTicket" file you just unzipped and you will see an "upload" file in there. Now make sure to open another file explorer by right clicking your folder icon on the bottom of your windows taskbar and clicking "File Explorer". Paste "c:\inetpub\wwwroot" into your quick access bar on the top of your file explorer tab. You will know you have done this right when you see two "iisstart" files in the folder. Click while holding "CTRL" and drag the "upload" file into your "Osticket" folder with the two "iisstart" files. Next, Rename your "upload" file to "osTicket". </p>
 
 <img src="https://i.imgur.com/b6r1o6A.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -179,11 +179,11 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 
 <img src="https://i.imgur.com/NhpANgv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>go to "select principle"</p>
+<p>Go to "Select Principle"</p>
 
 <img src="https://i.imgur.com/aDFMw4J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>then above the advanced button, give permission to the admins of your company and press ok but, in this tutorial, I will be giving permission to "everyone"</p>
+<p>Then above the advanced button, give permission to the admins of your company and press ok but, in this tutorial, I will be giving permission to "everyone"</p>
 
 <img src="https://i.imgur.com/oSBN2wB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -197,11 +197,11 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 
 <h3> 12) Creating OsTicket Login Info</h3>
 
-<p> After you have succesfully given admin permissions. you can then jump back onto the OsTicket Installer browser here "http://localhost/osTicket/setup/" to create your help desk account. (Note - When you are creating the "Admin User" Account make sure the email is different from the "Help Desk User" email).</p>
+<p> After you have succesfully given admin permissions, you can then jump back onto the OsTicket Installer browser here "http://localhost/osTicket/setup/" to create your help desk account. (Note - When you are creating the "Admin User" Account make sure the email is different from the "Help Desk User" email).</p>
 
 <h3> 13) Setting up HeidiSQL</h3>
 
-<p>When you have completed the "Help Desk" and "Admin User" accounts. You will see a third column called "Database Settings". for this section we will have to go back to the "Os-Ticket Installation" folder to install the "HeidiSQL" file. </p>
+<p>When you have completed the "Help Desk" and "Admin User" accounts, you will see a third column called "Database Settings". For this section we will have to go back to the "Os-Ticket Installation" folder to install the "HeidiSQL" file. </p>
 
 <img src="https://i.imgur.com/vZwaUxl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
