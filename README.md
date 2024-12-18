@@ -118,7 +118,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <h3>7) Launching MySQL</h3>
 
-<p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will launch after installation. make sure this is checked. Go through the installation proccess until you get to this screen. Choose "Standard Configuration" and procceed.
+<p>After you have installed "mysql-5.5.62-win32", at the last slide of the installation proccess it will tell you that "My SQL" will launch after installation. Make sure this is checked. Go through the installation proccess until you get to this screen. Choose "Standard Configuration" and procceed.
   
 <img src="https://i.imgur.com/OPsmJeU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
 
