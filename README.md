@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 <h3>1) Creating a Virtual Machine</h3>
 <p>
-Start by searching and selecting the "Virtual Machines" in the search bar of Microsoft Azure (Make sure you select "Virtual Machines", not "Virtual Networks"). 
+Start by searching and selecting the "Virtual Machines" in the search bar of Microsoft Azure (Make sure you select "Virtual Machines" not "Virtual Networks"). 
 </p>
 
 <p>
@@ -45,9 +45,9 @@ Start by searching and selecting the "Virtual Machines" in the search bar of Mic
 <h3>2) Setting up Resource Group</h3>
 
 <p>
- After clicking on the "virtual machine name", you can name it anything you like. For this tutorial, we’ll name ours "osticket-vm". Select "create new resource group" and click on the virtual machine you just created, and name the resource group "osticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
+ After clicking on the "Virtual Machine Name", you can name it anything you like. For this tutorial, we’ll name ours "osticket-vm". Select "Create new Resource Group" and click on the virtual machine you just created, and name the resource group "osticket." Choose your region based on your location (e.g., "Central Canada" if you're in Canada).
 
-Scroll down to find the "image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the size option on the same page.
+Scroll down to find the "Image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the "Size" option on the same page.
 
 You don’t need to change any default settings on the following pages, but make sure the licensing box is checked on the first page. Once done, proceed to review and create the virtual machine. The system will automatically create a virtual network, so you don’t need to configure that..</p>
 
@@ -71,10 +71,12 @@ You don’t need to change any default settings on the following pages, but make
 <h3>4) Downloading OsTicket</h3>
 
 <p>
- After you have logged into your "Remote Desktop", you can then procceed to download the "OsTicket" File provided here https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD. simply copy this link and paste it into a browser on your Virtual machine. Download and unzip this folder to your desktop.
+ After you have logged into your "Remote Desktop", you can then procceed to download the "OsTicket" File provided here https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD. simply copy this link and paste it into a browser on your Virtual machine. Download and unzip this folder to your desktop.</p>
+ 
   <p>
 <img src="https://i.imgur.com/O6NDJSp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
 <h3>5) Installing IIS</h3>
 
 <p>
@@ -104,7 +106,6 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
   <img src="https://i.imgur.com/ymvr1n0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-
 <p>After "IIS", "PHP manager" and "rewrite_amd64" are installed, go into your file explorer in your windows shortcut bar on the bottom and in your "Windows (C:)" drive under "This PC" create a "PHP" folder. Once Created, go into your "osticket" folder and extract the "php-7.3.8-nts-Win32-VC15-x86" folder to your "PHP" folder you just created in your "C" drive</p>
 
 <img src="https://i.imgur.com/jpz5HFD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -127,14 +128,15 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
  <img src="https://i.imgur.com/JLWIg3w.png" height="60%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 
-<p>After you have created a password, click "Next", "Execute" and "Finish"</p>
+<p>After you have created a password, click "Next", "Execute" and "Finish".</p>
+
 <h3>8) Open IIS as an Admin and Registering New PHP</h3>
 
-<p>Go to your search bar on the bottom left of your windows desktop and search for "Internet Information Services (IIS) Manager". Right-click and select "run as administrator"</p>
+<p>Go to your search bar on the bottom left of your windows desktop and search for "Internet Information Services (IIS) Manager". Right-click and select "Run as Administrator".</p>
 
 <img src="https://i.imgur.com/8B9O9hP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>Once you have ran IIS as administrator, you will be welcomed to their home screen. within that home screen, you will see a "PHP Manager" file, click it. You will then be brought to the PHP manager screen. Click "Regester New PHP Version" -> "Browse" (Which is This "..." on the right of the search file bar) -> "Windows (C:)" -> "PHP". Once you have clicked "PHP", select the "php.cgi" file within the "PHP" folder. After thats done simply press "OK".</p>
+<p>Once you have ran IIS as administrator, you will be welcomed to their home screen. within that home screen, you will see a "PHP Manager" file, click it. You will then be brought to the PHP manager screen. Click "Register New PHP Version" -> "Browse" (Which is This "..." on the right of the search file bar) -> "Windows (C:)" -> "PHP". Once you have clicked "PHP", select the "php.cgi" file within the "PHP" folder. After thats done simply press "OK".</p>
 
 <img src="https://i.imgur.com/8JPpFxz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -154,7 +156,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
 
 <h3>10) Installing Extensions</h3>
 
-<p>Once we have completed osTicket Installation we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator, We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, click that and it will lead you to "Application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and click "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "enable".  </p>
+<p>Once we have completed osTicket Installation we can now move onto step 10. In step 8, we opened up "Internet Information Services (IIS) Manager" as administrator, We will do this part of the step again. Once we have this open, on the top left within this application you will see and arrow, click that and it will lead you to "Application Pools" and "Sites", click the down arrow on "Sites" and you will see "Default Web Site". Click the down arrow on that and select "osTicket". You will then see at the bottom of this tab "Enable or disable an extension". Proceed to click that and enable "php_imap.dll", "php_intl.dll", and "php_opcache.dll" by right clicking and selecting "Enable".  </p>
 
 <img src="https://i.imgur.com/JOel3zb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/OqQ8tzH.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -207,13 +209,13 @@ After finishing step 10 correctly, you can then procceed to open another file ex
 
 <img src="https://i.imgur.com/Wg2UZWR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>Once you press "Finish" the HeidiSQL App will laucnh and you will be prompt with an updates page. You can press skip to get to the next part.</p>
+<p>Once you press "Finish", the HeidiSQL App will laucnh and you will be prompt with an updates page. You can press skip to get to the next part.</p>
 
 <p>On the "Heidi Session Manager" page on the bottom left you will see a "New" button. Click this button and type in the password we saved in step 7 (told you we would be coming back to it). Once you have punched in the password, you can click the "Open" button on the bottom of this page. </p>
 
 <img src="https://i.imgur.com/zIlqQ7K.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>This will then bring you to a page called "unamed". On this page you will need to right click the "unamed" button on the top left -> "Create New" -> Then "Database" </p>
+<p>This will then bring you to a page called "Unnamed". On this page you will need to right click the "Unnamed" button on the top left -> "Create New" -> Then "Database" </p>
 
 <img src="https://i.imgur.com/X0a7wRq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
