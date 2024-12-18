@@ -102,7 +102,7 @@ After you have installed "IIS", you then open your "osticket" folder and proccee
   <img src="https://i.imgur.com/fddo2dU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<p>The same goes for the "rewrite_amd64" file in the osticket folder. simply procceed through that installation portal as well.</p>
+<p>The same goes for the "rewrite_amd64" file in the osticket folder. Simply procceed through that installation portal as well.</p>
 
   <img src="https://i.imgur.com/ymvr1n0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
